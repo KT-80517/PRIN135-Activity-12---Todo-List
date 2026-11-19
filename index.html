@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIN135 - Todo List - Activity 12</title>
+
+
+<body id="top">
+
+    <!-- ---------- Navigation EMPTY ---------- -->
+
+    <!-- ---------- Header ---------- -->
+    <header class="site-header">
+            <div class="header-text">
+                <h1 class="name">Todo List</h1>
+        </div>
+    </header>
+
+    <main class="wrapper">
+
+        <!-- ---------- Add Form ------- -->
+        <div>
+            <form>
+                <input type="text" id="taskInput" placeholder="What needs to be done?">
+                <input type="text" id="taskHours" value="0">
+                <button type="submit" id="addTaskButton">Add</button>
+            </form>
+        </div>
+
+        <!-- ---------- Filter Buttons----- -->
+        <div>
+            <button id="showAllButton">All</button>
+            <button id="showActiveButton">Active</button>
+            <button id="showCompleteButton">Complete</button>
+        </div>
+
+        <!-- ---------- Task Row ---------- -->
+        <div>
+            <form>
+                <label>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="taskCheckbox1">
+                            <span id="taskLabel1"></span>
+                            <label for="taskCheckbox1">Task 1</label>
+                            <label for="taskdifficulty1">Easy ⋅ 1h</label>
+                            <button type="button" id="deleteTaskButton1">x</button> 
+                        </li>
+                        
+                        <li>
+                            <input type="checkbox" id="taskCheckbox2">
+                            <span id="taskLabel2"></span>
+                            <label for="taskCheckbox2">Task 2</label>
+                            <label for="taskdifficulty2">Medium ⋅ 3h</label>
+                            <button type="button" id="deleteTaskButton2">x</button> 
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="taskCheckbox3">
+                            <span id="taskLabel3"></span>
+                            <label for="taskCheckbox3">Task 3</label>
+                            <label for="taskdifficulty3">Hard ⋅ 5h</label>
+                            <button type="button" id="deleteTaskButton3">x</button>
+
+                    </ul>
+                </label>
+            </form>
+        </div>
+
+        <!-- ---------- Summary ---------- -->
+        <div>
+            <p id="summary"> # of task left | # of hours total <button id="clearCompletedButton">Clear Completed</button></p>
+        </div>
+
+
+    </main>
+
+    <!-- ---------- Footer ---------- -->
+    <footer class="site-footer">
+        <p class="Difficultyguide">Easy: up to 2h | Medium: over 2h | Hard: over 5h.</p>
+        <p class="Hints">Double click a task or its label to edit the text or hours. Press enter to save. Esc to cancel.</p>
+        <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </footer>
+
+</body>
+
+</html>
